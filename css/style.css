@@ -1,0 +1,91 @@
+:root {
+    --vermelha: #E50914;
+    --preta: #141414;
+    --cor-link-nav-superior: #aaa;
+    --branca: #fff;
+}
+/* resets */
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* base elements*/
+body {
+    background-color: var( --preta );
+    color: var(--branca);
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+header .container .logo {
+    margin-left: 10px;
+    color: var(--vermelha);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+
+header .container .netflix-logo-img {    
+    width:100px;
+    height: 35px;
+    margin-top: 20px;
+    margin-left:50px;
+}
+
+header .container nav {
+    margin-top: 20px;
+    margin-left: 35px;
+}
+
+header .container nav a {
+    color: var(--cor-link-nav-superior);
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 15px;
+    font-weight: bold; 
+    font-size: 14px;
+}
+
+header .container nav a:hover {
+    color: var(--branca);
+}
+
+/* main */
+
+/* main movie */
+
+.main-movie {
+    display: flex;
+    font-size: 16px;
+    background: linear-gradient(rgb(0,0,0,.50), rgb(0,0,0,.50)), url('.././img/capa-anatomia-de-gray.png');
+    background-size: cover;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 400px;
+    padding-top: 10%;
+    padding-left: 50px; 
+}
+
+.main-movie .title {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.movie-title-img {
+    margin-bottom: 20px;
+    width: 50%;
+}
+
+.main-movie .description {
+    width: 70%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
