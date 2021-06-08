@@ -21,7 +21,7 @@ body {
 header .container{
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-start; 
 }
 
 header .container .logo {
@@ -32,7 +32,7 @@ header .container .logo {
 }
 
 header .container .netflix-logo-img {    
-    width:100px;
+    max-width:100px;
     height: 35px;
     margin-top: 20px;
     margin-left:50px;
