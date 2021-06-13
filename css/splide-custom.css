@@ -1,0 +1,8 @@
+
+.splide__arrow svg {
+    fill: white;
+}
+.splide__slide {
+   border-radius: 5px;
+   margin: 2px;
+}
