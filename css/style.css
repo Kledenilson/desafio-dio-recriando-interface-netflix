@@ -64,15 +64,21 @@ header .container nav a:hover {
     color: var(--cinza-2);
 }
 
+header .container .mobile-menu {
+    display: none;
+}
+
 /* header-main-movie */
 
 .wrapper {
     display: flex;
-    flex-direction: column;
-    height: 600px;
-    width: 100%;
+    flex-direction: column; 
     background: linear-gradient(rgb(0,0,0,.50), rgb(0,0,0,.50)), url('.././img/capa-anatomia-de-gray.png');
-    background-size: cover;
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position: top center;
+    height: auto;
+    width: 100%;
 }
 
 /* main */
@@ -103,7 +109,7 @@ header .container nav a:hover {
 .main-movie .description {
     width: 70%;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 1.2rem;
     margin-bottom: 40px;
 }
 
@@ -269,13 +275,3 @@ footer .credits {
     width: 100%;
     margin-bottom: 15px;
 }
-
-
-
-
-
-
-
-
-
-
