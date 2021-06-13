@@ -5,37 +5,133 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/splide/splide.min.css">
+        <link rel="stylesheet" href="./css/splide/splide-skyblue.min.css">
+        <link rel="stylesheet" href="./css/splide-custom.css">
         <title>Netflix</title>
     </head>
     <body>
-        <header>
-            <div class="container">
-                    <!-- <h2 class="logo">NETFLIX</h2> -->
-                    <img src="./img/netflix-logo.png" alt="logo netflix" class="netflix-logo-img">
-                <nav>
-                    <a href="#">Início</a>
-                    <a href="#">Séries</a>
-                    <a href="#">Filmes</a>
-                    <a href="#">Documentários</a>
-                </nav>
-            </div>            
-        </header>
-        <main>
-            <div class="main-movie">
+        <div class="wrapper">
+            <header>
                 <div class="container">
-                    <!-- <h3 class="title"> a anatomia de gray </h3> -->
-                    <img src="./img/title-anatomia-de-gray.png" alt="a anatomia de gray" class="movie-title-img">
-                    <p class="description">Entre os problemas dos pacientes e os relacionamentos dos médicos, nada é simples nesse hospital.</p>
-                    <div class="main-movie-buttons">
-                        <button role="button" class="play-movie">Assistir</button>
-                        <button role="button" class="movie-info">Mais informações</button>
+                        <!-- <h2 class="logo">NETFLIX</h2> -->
+                        <img src="./img/netflix-logo.png" alt="logo netflix" class="netflix-logo-img">
+                    <nav>
+                        <a href="#">Início</a>
+                        <a href="#">Séries</a>
+                        <a href="#">Filmes</a>
+                        <a href="#">Bombando</a>
+                        <a href="#">Minha lista</a>
+                    </nav>
+                </div> 
+            </header>
+            <main>
+                <div class="main-movie">
+                    <div class="container">
+                        <!-- <h3 class="title"> a anatomia de gray </h3> -->
+                        <img src="./img/title-anatomia-de-gray.png" alt="a anatomia de gray" class="movie-title-img">
+                        <p class="description">Entre os problemas dos pacientes e os relacionamentos dos médicos, nada é simples nesse hospital.</p>
+                        <div class="main-movie-buttons">
+                            <button role="button" class="buttons button-play"><i class="fa fa-play"></i> Assistir</button>
+                            <button role="button" class="buttons button-info"><i class="fa fa-info-circle"></i> Mais informações</button>
+                        </div>
                     </div>
-
+                    <div class="maturity">
+                        <div class="container">
+                            <div class="age-box">
+                                <span class="age">16</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+            </main>
+       
+            <section class="populares">
+                <div class="container">
+                    <div class="section-title">Populares na Netflix <span class="view-all"> Ver tudo <i class="fas fa-chevron-right"></i></span></div>
+                    <div class="splide splide1">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide"><img src="./img/movies/populares/sweet-tooth.jpg"></li>
+                                <li class="splide__slide"><img src="./img/movies/populares/lucifer.jpg"></li>
+                                <li class="splide__slide"><img src="./img/movies/populares/os-salafrarios.jpg"></li>
+                                <li class="splide__slide"><img src="./img/movies/populares/corpo-humano.jpg"></li>
+                                <li class="splide__slide"><img src="./img/movies/populares/lupin.jpg"></li>
+                                <li class="splide__slide"><img src="./img/movies/populares/marsha-e-o-urso.webp"></li>
+                                <li class="splide__slide"><img src="./img/movies/em-alta/awake.jpg"></li>
+                                <li class="splide__slide"><img src="./img/movies/em-alta/la-casa-de-papel.jpg"></li>
+                                <li class="splide__slide"><img src="./img/movies/em-alta/nosso-planeta.jpg"></li>
+                                <li class="splide__slide"><img src="./img/movies/em-alta/sexify.jpg"></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            </div>            
-        </main>
-        <footer>
+            </section>
 
-        </footer>
+            <section class="em-alta">
+                <div class="container">
+                    <div class="section-title">Em alta <span class="view-all"> Ver tudo <i class="fas fa-chevron-right"></i></span></div>
+                    <div class="splide splide2">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide"><img src="./img/movies/em-alta/awake.jpg"></li>
+                                <li class="splide__slide"><img src="./img/movies/em-alta/la-casa-de-papel.jpg"></li>
+                                <li class="splide__slide"><img src="./img/movies/em-alta/nosso-planeta.jpg"></li>
+                                <li class="splide__slide"><img src="./img/movies/em-alta/ragnarok.jpg"></li>
+                                <li class="splide__slide"><img src="./img/movies/em-alta/sexify.jpg"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section> 
+            <footer>
+                <div class="container">
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <div class="links">
+                        <ul class="footer-links">
+                            <li class="footer-link-wrapper"><a class="member-footer-link" href="#"><span class="member-footer-link-content">Idioma e legendas</span></a></li>
+                            <li class="footer-link-wrapper"><a class="member-footer-link" href="#"><span class="member-footer-link-content">Audiodescrição</span></a></li>
+                            <li class="footer-link-wrapper"><a class="member-footer-link" href="#"><span class="member-footer-link-content">Centro de ajuda</span></a></li>
+                            <li class="footer-link-wrapper"><a class="member-footer-link" href="#"><span class="member-footer-link-content">Cartão pré-pago</span></a></li>
+                            <li class="footer-link-wrapper"><a class="member-footer-link" href="#"><span class="member-footer-link-content">Imprensa</span></a></li>
+                            <li class="footer-link-wrapper"><a class="member-footer-link" href="#"><span class="member-footer-link-content">Relações com investidores</span></a></li>
+                            <li class="footer-link-wrapper"><a class="member-footer-link" href="#"><span class="member-footer-link-content">Carreiras</span></a></li>
+                            <li class="footer-link-wrapper"><a class="member-footer-link" href="#"><span class="member-footer-link-content">Termos de uso</span></a></li>
+                            <li class="footer-link-wrapper"><a class="member-footer-link" href="#"><span class="member-footer-link-content">Privacidade</span></a></li>
+                            <li class="footer-link-wrapper"><a class="member-footer-link" href="#"><span class="member-footer-link-content">Avisos legais</span></a></li>
+                            <li class="footer-link-wrapper"><a class="member-footer-link" href="#"><span class="member-footer-link-content">Preferências de cookies</span></a></li>
+                            <li class="footer-link-wrapper"><a class="member-footer-link" href="#"><span class="member-footer-link-content">Informações corporativas</span></a></li>
+                            <li class="footer-link-wrapper"><a class="member-footer-link" href="#"><span class="member-footer-link-content">Entre em contato</span></a></li>
+                        </ul>    
+                    </div>
+                    <div class="credits">
+                        &copy; 1997-2021 Netflix, Inc.
+                    </div>
+                </div>
+            </footer>       
+        </div>        
+
+          <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+          <script src="./js/splide/splide.min.js"></script>
+          <script>
+
+            //definindo a configuração do splide  
+            const options = {
+                type   : 'loop',
+	            perPage: 5, 
+                fixedWidth  : 250,
+                fixedHeight  : 141,
+                cover: true               
+            }
+            //montando os slides
+            new Splide( '.splide1', options ).mount();
+            new Splide( '.splide2', options ).mount();
+
+        </script>
     </body>
 </html>

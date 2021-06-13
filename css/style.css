@@ -3,6 +3,8 @@
     --preta: #141414;
     --cor-link-nav-superior: #aaa;
     --branca: #fff;
+    --cinza-1: #aaa;
+    --cinza-2: #ccc;
 }
 /* resets */
 * {
@@ -18,10 +20,15 @@ body {
     color: var(--branca);
 }
 
+/* header */
 header .container{
     display: flex;
     align-items: center;
-    justify-content: flex-start; 
+    justify-content: flex-start;
+    width: 100%;
+    background: linear-gradient(to bottom, #000, rgb(0,0,0,0));
+    position: fixed;
+    height: 80px;
 }
 
 header .container .logo {
@@ -32,27 +39,40 @@ header .container .logo {
 }
 
 header .container .netflix-logo-img {    
-    max-width:100px;
-    height: 35px;
+    width:100px;
+    height: 34px;
     margin-top: 20px;
     margin-left:50px;
 }
 
 header .container nav {
     margin-top: 20px;
-    margin-left: 35px;
+    margin-left: 35px;    
 }
 
 header .container nav a {
     color: var(--cor-link-nav-superior);
     font-family: Arial, Helvetica, sans-serif;
     padding-left: 15px;
-    font-weight: bold; 
+    font-weight: lighter; 
     font-size: 14px;
+    color: var(--branca);
+    transition: .5s ease all;
 }
 
 header .container nav a:hover {
-    color: var(--branca);
+    color: var(--cinza-2);
+}
+
+/* header-main-movie */
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 100%;
+    background: linear-gradient(rgb(0,0,0,.50), rgb(0,0,0,.50)), url('.././img/capa-anatomia-de-gray.png');
+    background-size: cover;
 }
 
 /* main */
@@ -61,15 +81,13 @@ header .container nav a:hover {
 
 .main-movie {
     display: flex;
-    font-size: 16px;
-    background: linear-gradient(rgb(0,0,0,.50), rgb(0,0,0,.50)), url('.././img/capa-anatomia-de-gray.png');
-    background-size: cover;
+    font-size: 16px;   
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    height: 400px;
-    padding-top: 10%;
-    padding-left: 50px; 
+    align-items: flex-start;    
+    width: 100%;
+    padding-top: 5%;
+    padding-left: 50px;
 }
 
 .main-movie .title {
@@ -88,4 +106,176 @@ header .container nav a:hover {
     font-size: 20px;
     margin-bottom: 40px;
 }
+
+.main-movie .buttons {
+    padding: 12px 40px;
+    border-radius: 5px;
+    border: 0;
+    margin-right: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: .3s ease all;  
+}
+
+.main-movie .buttons i {
+    margin-right: 10px;
+}
+
+.main-movie .buttons:hover{
+    cursor: pointer;    
+}
+
+.main-movie .button-play {
+    background-color: #fff;
+    width: 180px;
+}
+
+.main-movie .button-play:hover {
+    background: #aaa;
+}
+
+.main-movie .button-info {
+    color: #fff;
+    background-color: rgb(255,255,255,.30);
+}
+
+.main-movie .button-info:hover {
+    color: #fff;
+    background-color: rgb(255,255,255,.10);
+}
+
+/* maturity */
+
+.maturity {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;    
+    width: 100%;
+}
+
+.maturity .container .age-box {
+    display: block;
+    width: 90px;
+    background-color: rgb(0,0,0,.2);
+    border-left: 3px solid white;
+    padding: 5px 0;
+}
+
+.maturity .container .age-box .age {
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 10px;
+    padding: 5px 4px;
+    background-color: #D7262D;
+    border-radius: 3px;
+}
+
+/* section */
+
+section {
+    margin-top: 50px;
+}
+
+/* populares */
+
+section .container {
+    margin-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section .container .section-title {
+    display: flex;
+    font-size: 1.2rem;
+    font-weight:  bold;
+    margin-bottom: 10px;
+    transition: .5s ease all;
+}
+
+section .container .view-all {
+    display: none;
+    margin-left: 5px;
+    font-size: 0.8rem;
+   
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    color: #808080;
+    padding-top: 50px;   
+}
+
+footer a {
+    color: #808080;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* width: 80%; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;    
+
+    max-width: 980px;
+    margin: 20px auto 0;
+    padding: 0 4%;
+  
+}
+
+footer .container .social-icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 2rem;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+footer .container .social-icons i {
+    margin: 10px;
+}
+
+footer .footer-links {
+    font-size: 13px;    
+    display: flex;     
+    flex-wrap: wrap;    
+    align-items: flex-start;
+    margin: 0 0 14px 0;
+    padding: 0;
+}
+
+footer .footer-links .footer-link-wrapper {
+    list-style-type: none;   
+    flex: 0 0 50%;
+    margin-bottom: 16px;    
+    box-sizing: border-box;
+}
+footer .footer-links li {
+    list-style-type: none;
+}
+footer .footer-links li a:hover{
+    text-decoration: underline;
+}
+
+footer .credits {
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
 
