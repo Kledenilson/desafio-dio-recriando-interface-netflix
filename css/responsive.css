@@ -1,0 +1,118 @@
+@media screen and ( max-width: 1080px ){
+
+   .main-movie {  
+        padding-top: 10%;
+        padding-left: 50px;
+    }
+
+    .movie-title-img {
+        margin-bottom: 20px;
+        width: 40%;
+    }
+    
+    .main-movie .description {
+        width: 60%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.2rem;
+        margin-bottom: 40px;
+    }    
+}
+
+@media screen and ( max-width: 800px ){
+
+    header .container .netflix-logo-img {
+        margin-left:20px;
+    }
+
+    .wrapper {
+        height: 600px;
+        width: 100%;
+        background-size: cover;
+    }
+    
+    .main-movie {          
+        margin-top: 5%;
+        padding-left: 20px;       
+    }
+
+    .movie-title-img {
+        margin-bottom: 20px;
+        width: 40%;
+    }
+
+    .main-movie .buttons {
+        margin-bottom: 10px;
+        width: 60%;
+    }
+
+    .maturity {
+        display: none;        
+    }
+
+    /* section */
+
+    section {
+        margin-top: 20px;      
+    }
+
+    section .container {
+        margin-left: 20px;
+    }
+}
+
+@media screen and ( max-width: 520px ){
+
+    header .container{       
+        justify-content:space-between;
+    }
+
+    header .container .netflix-logo-img {
+        margin-left: 5px;
+    }
+
+    header .container nav {
+        display: none;
+    }
+
+    header .container .mobile-menu {
+        display: block;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+
+    .main-movie {  
+        margin-top: 8%;
+        padding-left: 5px;
+    }
+
+    .movie-title-img {
+        margin-bottom: 20px;
+        width: 70%;
+    }
+
+    .main-movie .description {
+        width: 98%;      
+    }
+
+    .main-movie .buttons {
+        margin-bottom: 10px;
+        width: 98%;
+    }
+
+    /* section */
+    
+    section {
+        margin-top: 10px;      
+    }
+
+    section .container {
+        margin-left: 5px;
+    }
+
+}
+
+@media screen and ( max-width: 350px ){
+    .main-movie {  
+        margin-top: 10%;        
+    }
+}
